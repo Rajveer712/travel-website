@@ -1,0 +1,812 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta
+      name="description"
+      content="Wanderly - Explore beautiful destinations, hotels and travel packages"/>
+
+    <title>Shekhawat's - Explore The World</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <!--  NAVBAR  -->
+    <header class="navbar">
+      <div class="nav-container">
+        <a href="#home" class="logo">SHEKHA<span>WAT'S</span></a>
+        <nav class="nav-menu" id="navMenu">
+          <a href="#home" class="active">Home</a>
+          <a href="#destinations">Destinations</a>
+          <a href="#packages">Packages</a>
+          <a href="#hotels"> Hotels </a>
+          <a href="#gallery"> Gallery </a>
+          <a href="#contact"> Contact </a>
+          <a href="#booking" class="nav-book"> Book Now </a>
+        </nav>
+        <button class="menu-btn" id="menuBtn">☰</button>
+      </div>
+    </header>
+
+    <!--  HERO  -->
+    <main>
+      <section class="hero" id="home">
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+          <span class="hero-small"> ✈ DISCOVER THE WORLD </span>
+          <h1>Travel Beyond<span>Boundaries.</span></h1>
+          <p>
+            Discover beautiful places, unforgettable experiences and amazing
+            adventures around the world.
+          </p>
+
+          <!-- Search Box -->
+          <div class="travel-search">
+            <div class="search-item">
+              <span>📍</span>
+              <div>
+                <small>Destination</small>
+                <input
+                  type="text"
+                  id="destinationSearch"
+                  placeholder="Where do you want to go?"
+/>
+              </div>
+            </div>
+            <div class="search-item">
+              <span>📅</span>
+              <div>
+                <small>Travel Date</small>
+                <input type="date" id="heroDa/>
+              </div>
+            </div>
+            <button class="search-btn" id="heroSearchBtn">Search</button>
+          </div>
+        </div>
+      </section>
+
+      <!--  STATS  -->
+      <section class="stats">
+        <div class="stats-container">
+          <div class="stat">
+            <strong>120+</strong>
+            <span>Destinations</span>
+          </div>
+          <div class="stat">
+            <strong>500+</strong>
+            <span>Travel Packages</span>
+          </div>
+          <div class="stat">
+            <strong>25K+</strong>
+            <span>Happy Travelers</span>
+          </div>
+          <div class="stat">
+            <strong>4.9</strong>
+            <span>Average Rating</span>
+          </div>
+        </div>
+      </section>
+
+      <!--  DESTINATIONS  -->
+      <section class="section" id="destinations">
+        <div class="section-heading">
+          <div>
+            <span class="section-label"> EXPLORE </span>
+            <h2>Popular Destinations</h2>
+          </div>
+          <p>Find your next adventure from our most loved destinations.</p>
+        </div>
+
+        <!-- Destination Search -->
+        <div class="destination-tools">
+          <input type="text"id="destinationFilter"placeholder="Search destination/>
+          <div class="filter-buttons">
+            <button class="filter-btn active" data-region="all">All</button>
+            <button class="filter-btn" data-region="asia">Asia</button>
+            <button class="filter-btn" data-region="europe">Europe</button>
+            <button class="filter-btn" data-region="america">America</button>
+          </div>
+        </div>
+        <div class="destination-grid">
+
+          <!-- Card 1 -->
+          <article class="destination-card" data-region="asia" data-name="Bali">
+            <div class="destination-image">
+              <img
+                src="https://images.unsplash.com/photo-1537996194471-e657df975ab4?auto=format&fit=crop&w=900&q=80"
+                alt="B/>
+              <span class="destination-tag"> ASIA </span>
+              <button class="heart-btn">♡</button>
+            </div>
+            <div class="destination-info">
+              <div>
+                <h3>Bali</h3>
+                <span>🇮🇩 Indonesia</span>
+              </div>
+              <strong>From ₹24,999</strong>
+            </div>
+          </article>
+
+          <!-- Card 2 -->
+          <article class="destination-card"data-region="europe"data-name="Santorini">
+            <div class="destination-image">
+              <img
+                src="https://images.unsplash.com/photo-1570077188670-e3a8d69ac5ff?auto=format&fit=crop&w=900&q=80"
+                alt="Santor/>
+              <span class="destination-tag"> EUROPE </span>
+              <button class="heart-btn">♡</button>
+            </div>
+            <div class="destination-info">
+              <div>
+                <h3>Santorini</h3>
+                <span>🇬🇷 Greece</span>
+              </div>
+              <strong>From ₹69,999</strong>
+            </div>
+          </article>
+
+          <!-- Card 3 -->
+          <article class="destination-card" data-region="asia" data-name="Dubai">
+            <div class="destination-image">
+              <img
+                src="https://images.unsplash.com/photo-1512453979798-5ea266f8880c?auto=format&fit=crop&w=900&q=80"
+                alt="Du/>
+              <span class="destination-tag"> ASIA </span>
+              <button class="heart-btn">♡</button>
+            </div>
+            <div class="destination-info">
+              <div>
+                <h3>Dubai</h3>
+                <span>🇦🇪 UAE</span>
+              </div>
+              <strong>From ₹39,999</strong>
+            </div>
+          </article>
+
+          <!-- Card 4 -->
+          <article class="destination-card" data-region="europe" data-name="Paris">
+            <div class="destination-image">
+              <img
+                src="https://images.unsplash.com/photo-1502602898657-3e91760cbb34?auto=format&fit=crop&w=900&q=80"
+                alt="Pa/>
+              <span class="destination-tag"> EUROPE </span>
+              <button class="heart-btn">♡</button>
+            </div>
+            <div class="destination-info">
+              <div>
+                <h3>Paris</h3>
+                <span>🇫🇷 France</span>
+              </div>
+              <strong>From ₹74,999</strong>
+            </div>
+          </article>
+
+          <!-- Card 5 -->
+          <article class="destination-card" data-region="america" data-name="New York">
+            <div class="destination-image">
+              <img
+                src="https://images.unsplash.com/photo-1485871981521-5b1fd3805eee?auto=format&fit=crop&w=900&q=80"
+                alt="New Y/>
+              <span class="destination-tag"> AMERICA </span>
+              <button class="heart-btn">♡</button>
+            </div>
+            <div class="destination-info">
+              <div>
+                <h3>New York</h3>
+                <span>🇺🇸 USA</span>
+              </div>
+              <strong>From ₹99,999</strong>
+            </div>
+          </article>
+
+          <!-- Card 6 -->
+          <article class="destination-card" data-region="asia" data-name="Maldives">
+            <div class="destination-image">
+              <img
+                src="https://images.unsplash.com/photo-1514282401047-d79a71a590e8?auto=format&fit=crop&w=900&q=80"
+                alt="Maldi/>
+              <span class="destination-tag"> ASIA </span>
+              <button class="heart-btn">♡</button>
+            </div>
+            <div class="destination-info">
+              <div>
+                <h3>Maldives</h3>
+                <span>🇲🇻 Maldives</span>
+              </div>
+              <strong>From ₹54,999</strong>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <!--  PROMO  -->
+      <section class="promo">
+        <div class="promo-content">
+          <span>LIMITED TIME OFFER</span>
+          <h2>Get 20% Off Your First Adventure</h2>
+          <p>
+            Use code
+            <strong>WANDER20</strong>
+            while booking your first trip.
+          </p>
+          <a href="#packages" class="light-btn"> Explore Packages → </a>
+        </div>
+      </section>
+
+      <!--  PACKAGES  -->
+      <section class="section" id="packages">
+        <div class="section-heading">
+          <div>
+            <span class="section-label"> OUR PACKAGES </span>
+            <h2>Popular Tour Packages</h2>
+          </div>
+          <p>Carefully designed trips for unforgettable experiences.</p>
+        </div>
+        <div class="package-grid">
+
+          <!-- Package 1 -->
+          <article class="package-card">
+            <div class="package-image">
+              <img
+                src="https://images.unsplash.com/photo-1537996194471-e657df975ab4?auto=format&fit=crop&w=900&q=80"
+                alt="Bali Pack/>
+              <span class="package-badge"> BEST SELLER </span>
+            </div>
+            <div class="package-content">
+              <div class="rating">
+                ★★★★★
+                <span>4.9</span>
+              </div>
+              <h3>Bali Island Escape</h3>
+              <p>
+                Beaches, temples, waterfalls and unforgettable island
+                experiences.
+              </p>
+              <div class="package-details">
+                <span>📅 6 Days</span>
+                <span>👥 2-6 People</span>
+              </div>
+              <div class="package-bottom">
+                <div>
+                  <small>Starting from</small>
+                  <strong>₹24,999</strong>
+                </div>
+                <button class="book-package" data-package="Bali Island Escape" data-price="24999">
+                  Book Now
+                </button>
+              </div>
+            </div>
+          </article>
+
+          <!-- Package 2 -->
+
+          <article class="package-card">
+            <div class="package-image">
+              <img
+                src="https://images.unsplash.com/photo-1512453979798-5ea266f8880c?auto=format&fit=crop&w=900&q=80"
+                alt="Dubai Pack/>
+              <span class="package-badge"> POPULAR </span>
+            </div>
+            <div class="package-content">
+              <div class="rating">
+                ★★★★★
+                <span>4.8</span>
+              </div>
+              <h3>Dubai Luxury Escape</h3>
+              <p>
+                Experience luxury shopping, desert safari and breathtaking
+                skylines.
+              </p>
+              <div class="package-details">
+                <span>📅 5 Days</span>
+                <span>👥 2-5 People</span>
+              </div>
+              <div class="package-bottom">
+                <div>
+                  <small>Starting from</small>
+                  <strong>₹39,999</strong>
+                </div>
+                <button class="book-package" data-package="Dubai Luxury Escape" data-price="39999">
+                  Book Now
+                </button>
+              </div>
+            </div>
+          </article>
+
+          <!-- Package 3 -->
+          <article class="package-card">
+            <div class="package-image">
+              <img
+                src="https://images.unsplash.com/photo-1502602898657-3e91760cbb34?auto=format&fit=crop&w=900&q=80"
+                alt="Paris Pack/>
+              <span class="package-badge"> PREMIUM </span>
+            </div>
+            <div class="package-content">
+              <div class="rating">
+                ★★★★★
+                <span>4.9</span>
+              </div>
+              <h3>Romantic Paris</h3>
+              <p>
+                Discover the Eiffel Tower, museums, cafes and beautiful French
+                streets.
+              </p>
+              <div class="package-details">
+                <span>📅 7 Days</span>
+                <span>👥 2-4 People</span>
+              </div>
+              <div class="package-bottom">
+                <div>
+                  <small>Starting from</small>
+                  <strong>₹74,999</strong>
+                </div>
+                <button class="book-package" data-package="Romantic Paris" data-price="74999">
+                  Book Now
+                </button>
+              </div>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <!--  HOTELS  -->
+
+      <section class="section light-section" id="hotels">
+        <div class="section-heading">
+          <div>
+            <span class="section-label"> STAY WITH US </span>
+            <h2>Featured Hotels</h2>
+          </div>
+          <p>Comfortable stays selected for every kind of traveler.</p>
+        </div>
+        <div class="hotel-filters">
+          <button class="hotel-filter active" data-type="all">All</button>
+          <button class="hotel-filter" data-type="luxury">Luxury</button>
+          <button class="hotel-filter" data-type="resort">Resorts</button>
+          <button class="hotel-filter" data-type="budget">Budget</button>
+        </div>
+        <div class="hotel-grid">
+
+          <article class="hotel-card" data-type="luxury">
+            <img
+              src="https://images.unsplash.com/photo-1566073771259-6a8506099945?auto=format&fit=crop&w=900&q=80"
+              alt="Luxury Ho/>
+            <div class="hotel-info">
+              <div class="hotel-rating">
+                ★★★★★
+                <span>4.9</span>
+              </div>
+              <h3>The Grand Palace</h3>
+              <p>📍 Paris, France</p>
+              <div class="hotel-price">
+                <strong>₹12,500</strong>
+                <span>/ night</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="hotel-card" data-type="resort">
+            <img
+              src="https://images.unsplash.com/photo-1582719478250-c89cae4dc85b?auto=format&fit=crop&w=900&q=80"
+              alt="Beach Res/>
+            <div class="hotel-info">
+              <div class="hotel-rating">
+                ★★★★★
+                <span>4.8</span>
+              </div>
+              <h3>Ocean View Resort</h3>
+              <p>📍 Maldives</p>
+              <div class="hotel-price">
+                <strong>₹18,900</strong>
+                <span>/ night</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="hotel-card" data-type="budget">
+            <img
+              src="https://images.unsplash.com/photo-1564501049412-61c2a3083791?auto=format&fit=crop&w=900&q=80"
+              alt="Budget Ho/>
+            <div class="hotel-info">
+              <div class="hotel-rating">
+                ★★★★☆
+                <span>4.5</span>
+              </div>
+              <h3>City Comfort Inn</h3>
+              <p>📍 Dubai, UAE</p>
+              <div class="hotel-price">
+                <strong>₹4,999</strong>
+                <span>/ night</span>
+              </div>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <!--  GALLERY  -->
+
+      <section class="section" id="gallery">
+        <div class="section-heading">
+          <div>
+            <span class="section-label"> TRAVEL MOMENTS </span>
+            <h2>Explore Our Gallery</h2>
+          </div>
+          <p>A glimpse of the beautiful places waiting for you.</p>
+        </div>
+        <div class="gallery-grid">
+          <div class="gallery-item large">
+            <img
+              src="https://images.unsplash.com/photo-1537996194471-e657df975ab4?auto=format&fit=crop&w=1000&q=80"
+              alt="Bali"/>
+          </div>
+
+          <div class="gallery-item">
+            <img
+              src="https://images.unsplash.com/photo-1570077188670-e3a8d69ac5ff?auto=format&fit=crop&w=800&q=80"
+              alt="Santorini"/>
+          </div>
+
+          <div class="gallery-item">
+            <img
+              src="https://images.unsplash.com/photo-1512453979798-5ea266f8880c?auto=format&fit=crop&w=800&q=80"
+              alt="Dubai"/>
+          </div>
+
+          <div class="gallery-item">
+            <img
+              src="https://images.unsplash.com/photo-1502602898657-3e91760cbb34?auto=format&fit=crop&w=800&q=80"
+              alt="Paris"/>
+          </div>
+
+          <div class="gallery-item large">
+            <img
+              src="https://images.unsplash.com/photo-1514282401047-d79a71a590e8?auto=format&fit=crop&w=1000&q=80"
+              alt="Maldives"/>
+          </div>
+        </div>
+      </section>
+
+      <!--  BOOKING  -->
+
+      <section class="booking-section" id="booking">
+        <div class="booking-container">
+          <div class="booking-info">
+            <span class="section-label"> PLAN YOUR TRIP </span>
+
+            <h2>Ready for your next adventure?</h2>
+
+            <p>
+              Tell us where you want to go and we'll help you plan an
+              unforgettable journey.
+            </p>
+
+            <div class="booking-benefits">
+              <div>
+                <span>✓</span>
+                <p>Best price guarantee</p>
+              </div>
+
+              <div>
+                <span>✓</span>
+                <p>24/7 travel support</p>
+              </div>
+
+              <div>
+                <span>✓</span>
+                <p>Flexible cancellation</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- BOOKING FORM -->
+
+          <form class="booking-form" id="bookingForm">
+            <h3>Book Your Trip</h3>
+
+            <div class="form-row">
+              <div class="form-group">
+                <label> Full Name </label>
+
+                <input
+                  type="text"
+                  id="name"
+                  placeholder="Rajveer Singh Shekhawat"
+                  required
+/>
+              </div>
+
+              <div class="form-group">
+                <label> Email </label>
+
+                <input
+                  type="email"
+                  id="email"
+                  placeholder="Shekhawat@gmail.com"
+                  required
+/>
+              </div>
+            </div>
+
+            <div class="form-row">
+              <div class="form-group">
+                <label> Destination </label>
+
+                <select id="bookingDestination" required>
+                  <option value="">Select destination</option>
+
+                  <option value="Bali">Bali</option>
+
+                  <option value="Dubai">Dubai</option>
+
+                  <option value="Paris">Paris</option>
+
+                  <option value="Maldives">Maldives</option>
+
+                  <option value="Santorini">Santorini</option>
+                </select>
+              </div>
+
+              <div class="form-group">
+                <label> Travelers </label>
+
+                <input
+                  type="number"
+                  id="travelers"
+                  min="1"
+                  max="20"
+                  value="1"
+                  required
+/>
+              </div>
+            </div>
+
+            <div class="form-row">
+              <div class="form-group">
+                <label> Travel Date </label>
+
+                <input type="date" id="bookingDate" requi/>
+              </div>
+
+              <div class="form-group">
+                <label> Package </label>
+
+                <select id="bookingPackage">
+                  <option value="24999">Bali — ₹24,999</option>
+
+                  <option value="39999">Dubai — ₹39,999</option>
+
+                  <option value="74999">Paris — ₹74,999</option>
+                </select>
+              </div>
+            </div>
+
+            <div class="total-box">
+              <span> Estimated Total </span>
+
+              <strong id="totalPrice"> ₹24,999 </strong>
+            </div>
+
+            <button type="submit" class="booking-btn">Confirm Booking →</button>
+
+            <p class="form-message" id="formMessage"></p>
+          </form>
+        </div>
+      </section>
+
+      <!--  FAQ  -->
+
+      <section class="section faq-section">
+        <div class="section-heading">
+          <div>
+            <span class="section-label"> FAQ </span>
+
+            <h2>Frequently Asked Questions</h2>
+          </div>
+        </div>
+
+        <div class="faq-container">
+          <div class="faq-item">
+            <button class="faq-question">
+              How can I book a trip?
+
+              <span>+</span>
+            </button>
+
+            <div class="faq-answer">
+              <p>
+                Select your destination, choose your package, fill in the
+                booking form and confirm your trip.
+              </p>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button class="faq-question">
+              Can I cancel my booking?
+
+              <span>+</span>
+            </button>
+
+            <div class="faq-answer">
+              <p>
+                Yes. Cancellation policies depend on the selected package and
+                hotel.
+              </p>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button class="faq-question">
+              Do packages include hotels?
+
+              <span>+</span>
+            </button>
+
+            <div class="faq-answer">
+              <p>
+                Selected packages include accommodation. Check individual
+                package details before booking.
+              </p>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button class="faq-question">
+              Can I customize my trip?
+
+              <span>+</span>
+            </button>
+
+            <div class="faq-answer">
+              <p>
+                Yes. Contact our travel team to customize destinations, hotels
+                and activities.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!--  FOOTER  -->
+
+    <footer id="contact">
+      <div class="footer-container">
+        <div class="footer-about">
+          <a href="#home" class="logo"> WANDER<span>LY</span> </a>
+
+          <p>
+            Making your travel dreams a reality, one unforgettable journey at a
+            time.
+          </p>
+
+          <div class="socials">
+            <a href="#">f</a>
+            <a href="#">𝕏</a>
+            <a href="#">◎</a>
+            <a href="#">in</a>
+          </div>
+        </div>
+
+        <div class="footer-links">
+          <h4>Explore</h4>
+
+          <a href="#destinations">Destinations</a>
+          <a href="#packages">Packages</a>
+          <a href="#hotels">Hotels</a>
+          <a href="#gallery">Gallery</a>
+        </div>
+
+        <div class="footer-links">
+          <h4>Company</h4>
+
+          <a href="#">About Us</a>
+          <a href="#">Contact</a>
+          <a href="#">Careers</a>
+          <a href="#">Privacy Policy</a>
+        </div>
+
+        <div class="footer-links">
+          <h4>Contact</h4>
+
+          <p>📍 Jaipur, Rajasthan</p>
+          <p>📞 +91 636799 5091</p>
+          <p>✉ Shekhawat@gmail.com</p>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>© 2026 Shekhawat's. All rights reserved.</p>
+
+        <p>Made with HTML, CSS & JavaScript</p>
+      </div>
+    </footer>
+
+    <!--  GALLERY MODAL  -->
+
+    <div class="gallery-modal" id="galleryModal">
+      <button class="close-modal" id="closeModal">×</button>
+
+      <button class="gallery-prev" id="galleryPrev">‹</button>
+
+      <img id="modalImage" src="" alt="Gallery Previ/>
+
+      <button class="gallery-next" id="galleryNext">›</button>
+    </div>
+
+    <!--  SUCCESS MODAL  -->
+
+    <div class="success-modal" id="successModal">
+      <div class="success-box">
+        <div class="success-icon">✓</div>
+
+        <h2>Booking Submitted!</h2>
+
+        <p id="successText">Your booking request has been received.</p>
+
+        <button id="closeSuccess">Done</button>
+      </div>
+    </div>
+
+    <!-- BACK TO TOP -->
+
+    <button class="top-btn" id="topBtn">↑</button>
+
+    <script src="script.js"></script>
+  </body>
+</html>
+
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="login-container">
+
+        <div class="login-box">
+
+            <h1>Login</h1>
+
+            <p class="welcome">Welcome back! Please login to your account.</p>
+
+            <form>
+
+                <label>Email</label>
+                <input type="email" placeholder="Enter your email">
+
+                <label>Password</label>
+                <input type="password" placeholder="Enter your password">
+
+                <div class="options">
+
+                    <label class="remember">
+                        <input type="checkbox">
+                        Remember me
+                    </label>
+
+                    <a href="#">Forgot Password?</a>
+
+                </div>
+
+                <button type="submit">Login</button>
+
+            </form>
+
+            <p class="signup">
+                Don't have an account?
+                <a href="#">Sign Up</a>
+            </p>
+
+        </div>
+
+    </div>
+
+</body>
+</html> -->
